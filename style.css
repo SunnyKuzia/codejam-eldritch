@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: url(assets/home.png) no-repeat center / cover;
+}
+
+.ancients-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    height: 100vh;
+    max-width: 40%;
+    min-width: 480px;
+}
+
+.ancient {
+    height: 260px;
+    width: 200px;
+
+    transition: transform .2s;
+    border: 2px solid rgb(159, 15, 15);
+
+    margin: 20px;
+}
+
+.ancient:hover {
+    transform: scale(1.1);
+
+    border: 2px solid rgb(177, 156, 15);
+}
+
+.card1 {
+    background: url(assets/Ancients/Azathoth.png) no-repeat;
+    background-size: contain;
+}
+
+.card2 {
+    background: url(assets/Ancients/Cthulthu.png) no-repeat;
+    background-size: contain;
+}
+
+.card3 {
+    background: url(assets/Ancients/IogSothoth.png) no-repeat;
+    background-size: contain;
+}
+
+.card4 {
+    background: url(assets/Ancients/ShubNiggurath.png) no-repeat;
+    background-size: contain;
+}
+
+.difficulty-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.difficulty {
+    padding: 5px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgb(159, 15, 15);
+
+    text-align: center;
+}
+
+.difficulty:hover {
+    color: rgb(177, 156, 15);
+    border: 2px solid rgb(177, 156, 15);
+}
+
+.shuffle-button {
+    padding: 5px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgb(159, 15, 15);
+
+    text-align: center;
+}
+
+.shuffle-button:hover {
+    color: rgb(177, 156, 15);
+    border: 2px solid rgb(177, 156, 15);
+}
+
+.deck-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 30%;
+    align-items: center;
+    gap: 20px;
+}
+
+.stage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stage-text {
+    padding: 5px;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    text-align: center;
+}
+
+.dots-contaner {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+}
+
+.green {
+    background: green;
+}
+
+.brown {
+    background: rgba(255, 213, 0, 0.611);
+}
+
+.blue {
+    background: blue;
+}

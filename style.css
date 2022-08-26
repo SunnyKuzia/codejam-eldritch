@@ -35,41 +35,32 @@ body {
 
     transition: transform .2s;
     border: 2px solid rgb(159, 15, 15);
+    cursor: pointer;
 
     margin: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .ancient:hover {
     transform: scale(1.1);
-
     border: 2px solid rgb(177, 156, 15);
 }
 
-.card1 {
-    background: url(assets/Ancients/Azathoth.png) no-repeat;
-    background-size: contain;
-}
+.ancient.selected {
+    transform: scale(1.1);
 
-.card2 {
-    background: url(assets/Ancients/Cthulthu.png) no-repeat;
-    background-size: contain;
-}
-
-.card3 {
-    background: url(assets/Ancients/IogSothoth.png) no-repeat;
-    background-size: contain;
-}
-
-.card4 {
-    background: url(assets/Ancients/ShubNiggurath.png) no-repeat;
-    background-size: contain;
+    border: 2px solid rgb(26, 177, 15);
 }
 
 .difficulty-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
 
+.hidden {
+    visibility: hidden;
 }
 
 .difficulty {
@@ -77,6 +68,7 @@ body {
 
     background-color: rgba(255, 255, 255, 0.3);
     border: 2px solid rgb(159, 15, 15);
+    cursor: pointer;
 
     text-align: center;
 }
@@ -84,6 +76,11 @@ body {
 .difficulty:hover {
     color: rgb(177, 156, 15);
     border: 2px solid rgb(177, 156, 15);
+}
+
+.difficulty.selected {
+    color: rgb(26, 177, 15);
+    border: 2px solid rgb(26, 177, 15);
 }
 
 .shuffle-button {

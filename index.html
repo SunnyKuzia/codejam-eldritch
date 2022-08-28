@@ -13,37 +13,33 @@
     <div class="game">
         <div class="field">
             <div class="ancients-container"></div>
-            <div class="difficulty-container hidden"></div>
-            <div class="deck-container hidden">
+            <div class="difficulty-container invisible"></div>
+            <div class="deck-container invisible">
                 <div class="current-state">
                     <div class="stage-container">
-                        <span class="stage-text">Первая стадия</span>
-                        <div class="dots-contaner">
+                        <div class="stage-text">Первая стадия</div>
+                        <div class="dots-contaner first-stage">
+                            <div class="dot green"></div>
+                            <div class="dot brown"></div>
+                            <div class="dot blue"></div>
+                        </div>
+                        <div class="stage-text">Вторая стадия</div>
+                        <div class="dots-contaner second-stage">
+                            <div class="dot green"></div>
+                            <div class="dot brown"></div>
+                            <div class="dot blue"></div>
+                        </div>
+                        <div class="stage-text">Третья стадия</div>
+                        <div class="dots-contaner third-stage">
                             <div class="dot green"></div>
                             <div class="dot brown"></div>
                             <div class="dot blue"></div>
                         </div>
                     </div>
-                    <div class="stage-container">
-                        <span class="stage-text">Вторая стадия</span>
-                        <div class="dots-contaner">
-                            <div class="dot green"></div>
-                            <div class="dot brown"></div>
-                            <div class="dot blue"></div>
-                        </div>
-                    </div>
-                    <div class="stage-container">
-                        <span class="stage-text">Третья стадия</span>
-                        <div class="dots-contaner">
-                            <div class="dot green"></div>
-                            <div class="dot brown"></div>
-                            <div class="dot blue"></div>
-                        </div>
-                    </div>
-                    <span class="shuffle-button">Замешать колоду</span>
+                    <div class="deck"></div>
+                    <div class="last-card"></div>
                 </div>
-                <div class="deck"></div>
-                <div class="last-card"></div>
+                <div class="shuffle">Замешать колоду</div>
             </div>
         </div>
         <script type="module" src="eldritch.js"></script>

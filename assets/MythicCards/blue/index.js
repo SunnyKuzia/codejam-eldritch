@@ -1,5 +1,5 @@
 const cards = {
-  blue: "/assets/MythicCards/blue/blue1.png",
+  blue1: "/assets/MythicCards/blue/blue1.png",
   blue2: "/assets/MythicCards/blue/blue2.png",
   blue3: "/assets/MythicCards/blue/blue3.png",
   blue4: "/assets/MythicCards/blue/blue4.png",

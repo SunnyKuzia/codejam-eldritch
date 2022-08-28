@@ -20,7 +20,6 @@ body {
 .ancients-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
 
@@ -59,10 +58,6 @@ body {
     gap: 20px;
 }
 
-.hidden {
-    visibility: hidden;
-}
-
 .difficulty {
     padding: 5px;
 
@@ -83,18 +78,20 @@ body {
     border: 2px solid rgb(26, 177, 15);
 }
 
-.shuffle-button {
+.shuffle {
     padding: 5px;
 
     background-color: rgba(255, 255, 255, 0.3);
     border: 2px solid rgb(159, 15, 15);
 
     text-align: center;
+
+    cursor: pointer;
 }
 
-.shuffle-button:hover {
-    color: rgb(177, 156, 15);
-    border: 2px solid rgb(177, 156, 15);
+.shuffle:hover {
+    color: rgb(26, 177, 15);
+    border: 2px solid rgb(26, 177, 15);
 }
 
 .deck-container {
@@ -103,7 +100,13 @@ body {
     justify-content: center;
     min-width: 30%;
     align-items: center;
-    gap: 20px;
+}
+
+.current-state {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
 }
 
 .stage-container {
@@ -129,6 +132,9 @@ body {
     width: 30px;
     height: 30px;
 
+    text-align: center;
+    line-height: 30px;
+
     border-radius: 50%;
 }
 
@@ -142,4 +148,29 @@ body {
 
 .blue {
     background: blue;
+}
+
+.deck {
+    background: url(assets/mythicCardBackground.png);
+    background-size: cover;
+    height: 190px;
+    width: 130px;
+
+    cursor: pointer;
+}
+
+.last-card {
+    background-size: cover;
+    height: 190px;
+    width: 130px;
+
+    cursor: pointer;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.hidden {
+    display: none;
 }

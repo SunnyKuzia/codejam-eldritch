@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: url(assets/home.png) no-repeat center / cover;
+}
+
+.ancients-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    height: 100vh;
+    max-width: 40%;
+    min-width: 480px;
+}
+
+.ancient {
+    height: 260px;
+    width: 200px;
+
+    transition: transform .2s;
+    border: 2px solid rgb(159, 15, 15);
+    cursor: pointer;
+
+    margin: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ancient:hover {
+    transform: scale(1.1);
+    border: 2px solid rgb(177, 156, 15);
+}
+
+.ancient.selected {
+    transform: scale(1.1);
+
+    border: 2px solid rgb(26, 177, 15);
+}
+
+.difficulty-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.difficulty {
+    padding: 5px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgb(159, 15, 15);
+    cursor: pointer;
+
+    text-align: center;
+}
+
+.difficulty:hover {
+    color: rgb(177, 156, 15);
+    border: 2px solid rgb(177, 156, 15);
+}
+
+.difficulty.selected {
+    color: rgb(26, 177, 15);
+    border: 2px solid rgb(26, 177, 15);
+}
+
+.shuffle {
+    padding: 5px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgb(159, 15, 15);
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.shuffle:hover {
+    color: rgb(26, 177, 15);
+    border: 2px solid rgb(26, 177, 15);
+}
+
+.deck-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 30%;
+    align-items: center;
+}
+
+.current-state {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.stage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stage-text {
+    padding: 5px;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    text-align: center;
+}
+
+.dots-contaner {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 30px;
+    height: 30px;
+
+    text-align: center;
+    line-height: 30px;
+
+    border-radius: 50%;
+}
+
+.green {
+    background: green;
+}
+
+.brown {
+    background: rgba(255, 213, 0, 0.611);
+}
+
+.blue {
+    background: blue;
+}
+
+.deck {
+    background: url(assets/mythicCardBackground.png);
+    background-size: cover;
+    height: 190px;
+    width: 130px;
+
+    cursor: pointer;
+}
+
+.last-card {
+    background-size: cover;
+    height: 190px;
+    width: 130px;
+
+    cursor: pointer;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.hidden {
+    display: none;
+}
